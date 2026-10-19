@@ -1,3 +1,4 @@
+#if !SWIFT_PACKAGE || !targetEnvironment(simulator)
 //
 //  CustomCmdManager.swift
 //  Pods
@@ -137,3 +138,5 @@ private enum CustomCmdConstants {
         eventSink = nil
     }
 }
+
+#endif

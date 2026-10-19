@@ -1,3 +1,4 @@
+#if !SWIFT_PACKAGE || !targetEnvironment(simulator)
 //
 //  SettingsManager.swift
 //  Runner
@@ -258,3 +259,5 @@ class SettingsManager {
         isCleanedUp = false
     }
 }
+
+#endif

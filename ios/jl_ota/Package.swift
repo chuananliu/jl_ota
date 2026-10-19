@@ -65,6 +65,7 @@ let package = Package(
       path: "Sources/jl_ota",
       sources: [
         "SPMExports.swift",
+        "SimulatorJlOtaPlugin.swift",
         "Classes/BlePlugin.swift",
         "Classes/Constant/EventChannelConstants.swift",
         "Classes/Constant/LogConstants.swift",

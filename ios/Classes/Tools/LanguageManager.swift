@@ -1,3 +1,4 @@
+#if !SWIFT_PACKAGE || !targetEnvironment(simulator)
 import DFUnits
 
 //
@@ -34,3 +35,5 @@ enum LanguageManager {
         }
     }
 }
+
+#endif

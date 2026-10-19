@@ -1,3 +1,6 @@
+#import <TargetConditionals.h>
+
+#if !defined(SWIFT_PACKAGE) || !TARGET_OS_SIMULATOR
 //
 //  JLBleAssistManager.m
 //  JL_OTA
@@ -401,7 +404,4 @@ NSString *FLT_BLE_RCSP_R  = @"AE02"; //命令“读”通道
 
 @end
 
-
-
-
-
+#endif

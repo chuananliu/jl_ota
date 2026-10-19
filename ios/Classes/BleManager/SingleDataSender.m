@@ -1,3 +1,6 @@
+#import <TargetConditionals.h>
+
+#if !defined(SWIFT_PACKAGE) || !TARGET_OS_SIMULATOR
 //
 //  SingleDataSender.m
 //  JL_OTA
@@ -92,3 +95,5 @@ static NSString * const kLogTagSingleSend = @"single send";
 }
 
 @end
+
+#endif

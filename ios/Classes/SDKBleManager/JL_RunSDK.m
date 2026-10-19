@@ -1,3 +1,6 @@
+#import <TargetConditionals.h>
+
+#if !defined(SWIFT_PACKAGE) || !TARGET_OS_SIMULATOR
 //
 //  JL_RunSDK.m
 //  JL_OTA_InnerBle
@@ -174,3 +177,5 @@
 }
 
 @end
+
+#endif

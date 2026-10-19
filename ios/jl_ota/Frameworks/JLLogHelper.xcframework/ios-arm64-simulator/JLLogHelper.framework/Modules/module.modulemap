@@ -1,0 +1,4 @@
+framework module JLLogHelper {
+    umbrella header "JLLogHelper.h"
+    export *
+}

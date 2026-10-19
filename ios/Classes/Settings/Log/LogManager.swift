@@ -1,3 +1,4 @@
+#if !SWIFT_PACKAGE || !targetEnvironment(simulator)
 //
 //  LogManager.swift
 //  Runner
@@ -297,3 +298,5 @@ class LogManager {
         isReading = false
     }
 }
+
+#endif

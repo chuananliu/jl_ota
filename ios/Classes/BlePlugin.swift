@@ -1,3 +1,4 @@
+#if !SWIFT_PACKAGE || !targetEnvironment(simulator)
 //
 //  BlePlugin.swift
 //  Runner
@@ -77,3 +78,5 @@ public class BlePlugin: NSObject, FlutterPlugin {
         dispose()
     }
 }
+
+#endif

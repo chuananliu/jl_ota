@@ -1,3 +1,4 @@
+#if !SWIFT_PACKAGE || !targetEnvironment(simulator)
 //
 //  MethodChannelHandler.swift
 //  Runner
@@ -45,3 +46,5 @@ public class JlOtaPlugin: NSObject, FlutterPlugin {
         OtaManager.shared.setWifiIpAddress(ipAddress)
     }
 }
+
+#endif

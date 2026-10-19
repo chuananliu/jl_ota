@@ -1,3 +1,4 @@
+#if !SWIFT_PACKAGE || !targetEnvironment(simulator)
 //
 //  MethodChannelHandler.swift
 //  Runner
@@ -398,3 +399,5 @@ class MethodChannelHandler: NSObject {
         customCmdManager.handleCustomCmd(call: call, result: result)
     }
 }
+
+#endif

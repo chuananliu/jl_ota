@@ -1,3 +1,6 @@
+#import <TargetConditionals.h>
+
+#if !defined(SWIFT_PACKAGE) || !TARGET_OS_SIMULATOR
 //
 //  JLBleHandler.m
 //  JL_OTA
@@ -249,3 +252,5 @@ static NSString * const kLogTagReconnectByUUIDCustom = @"---> OTA SDK reconnecti
 }
 
 @end
+
+#endif

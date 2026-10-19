@@ -1,3 +1,6 @@
+#import <TargetConditionals.h>
+
+#if !defined(SWIFT_PACKAGE) || !TARGET_OS_SIMULATOR
 //
 //  JLBleEntity.m
 //  JL_OTA
@@ -23,3 +26,5 @@
 }
 
 @end
+
+#endif

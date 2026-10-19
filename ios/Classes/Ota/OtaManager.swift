@@ -1,3 +1,4 @@
+#if !SWIFT_PACKAGE || !targetEnvironment(simulator)
 //  OtaManager.swift
 //  Runner
 //
@@ -408,3 +409,5 @@ private enum OtaConstants {
         ]
     }
 }
+
+#endif

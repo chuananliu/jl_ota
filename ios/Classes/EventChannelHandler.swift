@@ -1,3 +1,4 @@
+#if !SWIFT_PACKAGE || !targetEnvironment(simulator)
 //
 //  EventChannelHandler.swift
 //  Runner
@@ -518,3 +519,5 @@ class EventChannelHandler: NSObject, FlutterStreamHandler {
         eventSink = nil
     }
 }
+
+#endif
